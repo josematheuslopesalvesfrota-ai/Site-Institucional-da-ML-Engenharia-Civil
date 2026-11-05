@@ -1,0 +1,16 @@
+/* Conteúdo acrescentado para a apresentação profissional da ML Engenharia Civil. */
+.service-grid { grid-template-columns: repeat(3, 1fr); }
+.profile-photo { height: 385px; overflow: hidden; background: #f3f5f5; }
+.profile-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 32%; }
+.testimonials { background: #fff8f2; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+.testimonial-grid figure { margin: 0; padding: 28px; background: #fff; border: 1px solid #f2e5db; }
+.testimonial-grid blockquote { margin: 0 0 18px; font: 600 1.08rem/1.5 Manrope, sans-serif; }
+.testimonial-grid blockquote::before { content: "“"; color: var(--orange); font-size: 2.4rem; line-height: 0; vertical-align: -.45em; margin-right: 4px; }
+.testimonial-grid figcaption { color: var(--muted); font-size: .75rem; }
+.difference-card { margin: 0; padding: 28px; background: #fff; border: 1px solid #f2e5db; }
+.difference-card span { display: block; margin-bottom: 22px; color: var(--orange); font: 800 1.1rem Manrope, sans-serif; }
+.difference-card h3 { margin: 0 0 9px; font: 700 1.1rem Manrope, sans-serif; }
+.difference-card p { margin: 0; color: var(--muted); font-size: .9rem; }
+@media (max-width: 850px) { .service-grid, .testimonial-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 520px) { .service-grid, .testimonial-grid { grid-template-columns: 1fr; } }
