@@ -14,3 +14,9 @@
 .difference-card p { margin: 0; color: var(--muted); font-size: .9rem; }
 @media (max-width: 850px) { .service-grid, .testimonial-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .service-grid, .testimonial-grid { grid-template-columns: 1fr; } }
+
+.brand img { width: 290px; }
+
+@media (max-width: 520px) {
+  .brand img { width: 210px; }
+}
