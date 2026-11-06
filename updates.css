@@ -1,5 +1,14 @@
 /* Conteúdo acrescentado para a apresentação profissional da ML Engenharia Civil. */
 .service-grid { grid-template-columns: repeat(3, 1fr); }
+.topbar { height: 100px; box-shadow: 0 1px 0 #e8ecee; }
+.brand { display: flex; flex-direction: column; align-items: flex-start; }
+.brand img { width: 350px; }
+.brand-tagline { margin-top: -5px; color: #59646c; font-size: .72rem; font-weight: 800; letter-spacing: .13em; text-transform: uppercase; }
+.hero { padding-top: 104px; padding-bottom: 92px; }
+.hero h1 { max-width: 800px; font-size: clamp(3.35rem, 5.8vw, 5.6rem); line-height: 1.02; }
+.hero .lead { max-width: 690px; font-size: 1.24rem; line-height: 1.55; }
+.hero .button-primary { padding: 18px 25px; font-size: 1.02rem; box-shadow: 0 12px 24px #f47b2040; }
+.hero .button-secondary { padding: 18px 22px; font-size: 1rem; }
 .profile-photo { height: 385px; overflow: hidden; background: #f3f5f5; }
 .profile-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 32%; }
 .testimonials { background: #fff8f2; }
@@ -14,24 +23,22 @@
 .difference-card p { margin: 0; color: var(--muted); font-size: .9rem; }
 @media (max-width: 850px) { .service-grid, .testimonial-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 520px) { .service-grid, .testimonial-grid { grid-template-columns: 1fr; } }
+@media (max-width: 850px) { .topbar { height: 82px; } .brand img { width: 280px; } .hero { padding-top: 74px; padding-bottom: 70px; } }
+@media (max-width: 520px) { .brand img { width: 225px; } .brand-tagline { font-size: .55rem; } .hero h1 { font-size: 2.9rem; } .hero .lead { font-size: 1.06rem; } }
 
-.brand img { width: 290px; }
+.instagram-nav { color: #c13584 !important; font-weight: 800 !important; }
+.instagram-footer { color: #c13584 !important; font-weight: 800; }
 
-@media (max-width: 520px) {
-  .brand img { width: 210px; }
-}
+.google-reviews { background: #f7f9fa; text-align: center; }
+.google-reviews .container { max-width: 760px; }
+.google-reviews .eyebrow { margin-bottom: 14px; }
+.google-reviews h2 { font: 800 clamp(2rem, 4vw, 3.15rem)/1.08 Manrope, sans-serif; letter-spacing: -.045em; margin: 0 auto 16px; }
+.google-reviews p { color: var(--muted); font-size: 1.05rem; margin: 0 auto 28px; max-width: 610px; }
+.button-google { background: #fff; border: 1px solid #dce1e5; color: var(--ink); box-shadow: 0 10px 22px #1d273014; }
+.button-google span { color: var(--orange); font-size: 1.1rem; }
 
-.brand {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.brand-tagline {
-  margin-top: -5px;
-  color: #59646c;
-  font-size: .72rem;
-  font-weight: 800;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-}
+.services-cta { margin-top: 30px; padding: 24px 26px; border: 1px solid #f0dfd4; background: #fff8f2; display: flex; gap: 22px; align-items: center; justify-content: space-between; }
+.services-cta strong, .services-cta span { display: block; }
+.services-cta strong { font: 800 1.15rem Manrope, sans-serif; margin-bottom: 3px; }
+.services-cta span { color: var(--muted); font-size: .94rem; }
+@media (max-width: 650px) { .services-cta { align-items: stretch; flex-direction: column; } .services-cta .button { width: 100%; } }
